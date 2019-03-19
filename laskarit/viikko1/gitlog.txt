@@ -1,3 +1,5 @@
+Testaamista epäsynkrooniin
+
 forstjoh@lx8-fuxi098:~/ot_viikko1/tiedostoja$ git log --stat|cat
 commit 823534defbbc702799c99d71a7b1faba32cdc9aa
 Author: Johanna <johanna.forsten@helsinki.fi>
