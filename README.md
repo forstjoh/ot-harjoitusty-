@@ -1,3 +1,3 @@
 # Otsikko
 
-Tavallista ** lihavoitua** ja * kursivoitua* tekstiä.
+Tavallista **lihavoitua** ja *kursivoitua* tekstiä.
