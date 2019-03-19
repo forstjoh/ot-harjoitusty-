@@ -1,0 +1,21 @@
+forstjoh@lx8-fuxi098:~/ot_viikko1/tiedostoja$ git log --stat|cat
+commit 823534defbbc702799c99d71a7b1faba32cdc9aa
+Author: Johanna <johanna.forsten@helsinki.fi>
+Date:   Mon Mar 18 22:53:39 2019 +0200
+
+    muutoksia
+
+ file2           | 0
+ file1 => file22 | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit fc76418ffa065aa0842bda3f5e39751a0cc53c9c
+Author: Johanna <johanna.forsten@helsinki.fi>
+Date:   Mon Mar 18 22:48:03 2019 +0200
+
+    uudet filet
+
+ file1 | 0
+ file2 | 0
+ file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
