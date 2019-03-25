@@ -1,0 +1,292 @@
+#Testauskattavuus
+
+## Jacoco raportti
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.mycompany</groupId>
+    <artifactId>Unicafe</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>Unicafe</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+                <version>2.5</version>
+            </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.0</version>
+                <executions>
+                    <execution>
+                        <id>default-prepare-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>  
+        </plugins>
+
+    </build>
+</project>
+
+##Javan koodit
+
+###Unicafe Maksukortti testit
+
+package com.mycompany.unicafe;
+
+import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.Test;
+
+public class MaksukorttiTest {
+
+    Maksukortti kortti;
+
+    @Before
+    public void setUp() {
+        kortti = new Maksukortti(10);
+    }
+
+    @Test
+    public void luotuKorttiOlemassa() {
+        assertTrue(kortti!=null);      
+    }
+    
+    @Test
+    public void konstruktoriAsettaaSaldonOikein() {
+    Maksukortti kortti = new Maksukortti(10);
+    
+    String vastaus = kortti.toString(); 
+
+    assertEquals("saldo: 0.10", kortti.toString());
+    }
+    
+    @Test
+    public void rahanLataaminenKasvattaaSaldonOikein() {
+    Maksukortti kortti = new Maksukortti(10);
+    
+    kortti.lataaRahaa(220);
+
+    assertEquals("saldo: 2.30", kortti.toString());
+    }
+    
+    @Test
+    public void rahanOttaminenToimiiOikein() {
+    Maksukortti kortti = new Maksukortti(20);
+    
+    kortti.otaRahaa(10);
+    kortti.otaRahaa(200);
+   
+    assertEquals("saldo: 0.10", kortti.toString());
+    }
+}
+
+###Unicafe Kassapääte testit
+
+package com.mycompany.unicafe;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+/**
+ *
+ * @author forstjoh
+ */
+public class KassapaateTest {
+    
+    Kassapaate unicafeExactum;
+    
+    
+    @Before
+    public void setUp() {
+        unicafeExactum = new Kassapaate();
+    }
+    
+    @Test
+    public void luotuKorttiOlemassa() {
+        assertTrue(unicafeExactum!=null);      
+    }
+    
+    @Test
+    public void syoMaukkaastiKasvattaaSaldoa() {
+    
+    Kassapaate unicafeExactum  = new Kassapaate();   
+
+    assertEquals(5,unicafeExactum.syoMaukkaasti(405));
+    assertEquals(100400,unicafeExactum.kassassaRahaa());
+    assertEquals(1,unicafeExactum.maukkaitaLounaitaMyyty());  
+    
+    assertEquals(300,unicafeExactum.syoMaukkaasti(300));
+    assertEquals(100400,unicafeExactum.kassassaRahaa());
+    assertEquals(1,unicafeExactum.maukkaitaLounaitaMyyty()); 
+    }  
+    
+    @Test
+    public void syoEdullisestiKasvattaaSaldoa() {
+    
+    Kassapaate unicafeExactum  = new Kassapaate();   
+
+    assertEquals(60,unicafeExactum.syoEdullisesti(300));
+    assertEquals(100240,unicafeExactum.kassassaRahaa());
+    assertEquals(1,unicafeExactum.edullisiaLounaitaMyyty());  
+    
+    assertEquals(200,unicafeExactum.syoEdullisesti(200));
+    assertEquals(100240,unicafeExactum.kassassaRahaa());
+    assertEquals(1,unicafeExactum.edullisiaLounaitaMyyty()); 
+    }  
+    
+    
+    @Test
+    public void rahanOttaminenToimiiOikein() {
+    Maksukortti kortti = new Maksukortti(700);
+    boolean tosion = true;
+    boolean eiole = false;
+    
+    Kassapaate unicafeExactum  = new Kassapaate();   
+    
+    assertEquals(tosion,unicafeExactum.syoEdullisesti(kortti));
+    assertEquals(700-240,kortti.saldo());
+    assertEquals(1,unicafeExactum.edullisiaLounaitaMyyty());
+    
+    assertEquals(tosion,unicafeExactum.syoMaukkaasti(kortti));
+    assertEquals(700-240-400,kortti.saldo());
+    assertEquals(1,unicafeExactum.maukkaitaLounaitaMyyty());
+    
+    assertEquals(eiole,unicafeExactum.syoMaukkaasti(kortti));
+    assertEquals(700-240-400,kortti.saldo());
+    assertEquals(1,unicafeExactum.maukkaitaLounaitaMyyty());
+    
+    assertEquals(eiole,unicafeExactum.syoEdullisesti(kortti));
+    assertEquals(700-240-400,kortti.saldo());
+    assertEquals(1,unicafeExactum.edullisiaLounaitaMyyty());
+    
+    //kassassa oleva rahamäärä ei muutu kortilla ostettaessa
+    assertEquals(100000,unicafeExactum.kassassaRahaa());
+    
+    }
+}
+
+###Maksukortti Maksukortti testit
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+/**
+ *
+ * @author forstjoh
+ */
+public class MaksukorttiTest {
+  
+    Maksukortti kortti;
+    @Before
+    public void setUp() {
+        kortti = new Maksukortti(10);
+    }
+
+     @Test
+    public void konstruktoriAsettaaSaldonOikein() {
+    Maksukortti kortti = new Maksukortti(10);
+    
+    String vastaus = kortti.toString(); 
+
+    assertEquals("Kortilla on rahaa 10.0 euroa", vastaus);
+    }
+    
+    @Test
+    public void syoEdullisestiVahentaaSaldoaOikein() {
+    Maksukortti kortti = new Maksukortti(10);
+    
+    kortti.syoEdullisesti();
+    
+    assertEquals("Kortilla on rahaa 7.5 euroa", kortti.toString());
+    }
+    
+    @Test
+    public void syoMaukkaastiVahentaaSaldoaOikein() {
+    Maksukortti kortti = new Maksukortti(10);
+
+    kortti.syoMaukkaasti();
+
+    assertEquals("Kortilla on rahaa 6.0 euroa", kortti.toString());
+    }
+
+    @Test
+    public void syoEdullisestiEiVieSaldoaNegatiiviseksi() {
+    Maksukortti kortti = new Maksukortti(10);
+
+    kortti.syoMaukkaasti();
+    kortti.syoMaukkaasti();
+    // nyt kortin saldo on 2
+    kortti.syoEdullisesti();
+
+    assertEquals("Kortilla on rahaa 2.0 euroa", kortti.toString());
+    }  
+
+    @Test
+    public void kortilleVoiLadataRahaa() {
+    kortti.lataaRahaa(25);
+    assertEquals("Kortilla on rahaa 35.0 euroa", kortti.toString());
+    }
+    
+    
+
+    @Test
+    public void kortinSaldoEiYlitaMaksimiarvoa() {
+    kortti.lataaRahaa(200);
+    assertEquals("Kortilla on rahaa 150.0 euroa", kortti.toString());
+    }
+    
+    @Test
+    public void kortinSaldoEiAlitaMinimiarvoa() {
+    kortti.lataaRahaa(-10);
+    assertEquals("Kortilla on rahaa 10.0 euroa", kortti.toString());
+    }
+    
+    
+    @Test
+    public void syoMaukkaastiEiVieSaldoaNegatiiviseksi() {
+    Maksukortti kortti = new Maksukortti(10);
+
+    kortti.syoEdullisesti();
+    kortti.syoMaukkaasti();
+    kortti.syoMaukkaasti();
+
+    assertEquals("Kortilla on rahaa 3.5 euroa", kortti.toString());
+    }  
+}
+
