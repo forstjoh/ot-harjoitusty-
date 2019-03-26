@@ -14,7 +14,7 @@ Kaikki käyttäjät ovat samalla roolilla.
 
 ## Käyttöliittymäluonnos
 
-![Logo](/forstjoh/ot-harjoitustyo/kuva.png)
+![Logo](/ot-harjoitustyo/kuva.png)
 
 ## Perusversion tarjoama toiminnallisuus
 
