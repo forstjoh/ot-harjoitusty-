@@ -14,7 +14,7 @@ Kaikki käyttäjät ovat samalla roolilla.
 
 ## Käyttöliittymäluonnos
 
-![Logo](/ot-harjoitustyo/kuva.png)
+![Logo](/ot-harjoitustyö/kuva.png)
 
 ## Perusversion tarjoama toiminnallisuus
 
