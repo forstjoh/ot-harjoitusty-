@@ -2,10 +2,9 @@
 
 ## Sovelluksen tarkoitus
 
-Opintojen seurantajärjestelmällä opiskelija näkee kaikki kurssit, mitkä on
-itse lisännyt kurssit listalleen. Yksittäisen kurssin tiedoistan pääsee uudelle
-listalle, jossa on tiedot kyseisen kurssin tilasta, tenttipäivästä ja 
-arvosanasta. Tälle listasivulle voi myös kirjoittaa kurssin muistiinpanoja.
+Opintojen seurantajärjestelmä mahdollistaa opiskelijan kirjata kurssien
+muistiinpanot yksittäisen kurssin listalle. Samalla listalla on koottuna myös 
+kurssin tila, tenttipäivä ja arvosana.
 Sovellusta on mahdollista käyttää useamman rekisteröityneen käyttäjän, 
 joilla on kaikilla omat kurssilistansa.
 
@@ -29,9 +28,10 @@ jollei käyttäjää löydy, järjestelmä ilmoittaa asiasta
 * Yksittäisen luodun kurssin kohdalta pääsee uudelle listasivulle, missä on
 seuraavat kurssin tiedot:
 	* kurssin nimi
+	* muistiinpanot
 	* kurssin tila (ei alkanut, käynnissä, suoritettu, hylätty)
 	* tenttipäivä
-	* muistiinpanot
+	* arvosana
 	* OK, mikä tallentaa tehdyt muutokset ja jolla pääsee takaisin
 	 kurssit listaukseen
 	* Peru, mikä vie takaisin tallentamatta kurssit listaukseen 
