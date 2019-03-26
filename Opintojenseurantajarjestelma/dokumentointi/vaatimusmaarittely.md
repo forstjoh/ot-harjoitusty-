@@ -12,6 +12,10 @@ joilla on kaikilla omat kurssilistansa.
 
 Kaikki käyttäjät ovat samalla roolilla.
 
+## Käyttöliittymäluonnos
+
+/home/forstjoh/Desktop/kuva.png
+
 ## Perusversion tarjoama toiminnallisuus
 
 ### Ennen kirjautumista
