@@ -1,6 +1,7 @@
 # työaikakirjanpito
 
 | **päivä** | **aika** | **mitä tein** |
+|---------- |:--------:| --------------------------------------------------:|
 | 25.3 | 2 | tutustuminen annettuihin ohjeisiin |
 | 26.3 | 1 | aiheen valinta |
 | 26.3 | 3 | vaatimusmäärittelyt |
