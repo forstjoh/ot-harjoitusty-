@@ -14,7 +14,8 @@ Kaikki käyttäjät ovat samalla roolilla.
 
 ## Käyttöliittymäluonnos
 
-![Kuva](/ot-harjoitustyö/kuva.png)
+Kuva:
+![Kuva](/ot-harjoitustyö/kuva.png "Kuva")
 
 ## Perusversion tarjoama toiminnallisuus
 
