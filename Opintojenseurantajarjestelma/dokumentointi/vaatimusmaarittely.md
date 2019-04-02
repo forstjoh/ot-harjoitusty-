@@ -15,7 +15,7 @@ Kaikki käyttäjät ovat samalla roolilla.
 ## Käyttöliittymäluonnos
 
 Kuva:
-![Kuva](https://github.com/forstjoh/ot-harjoitusty-/blob/master/kuva.png "Kuva")
+!(https://github.com/forstjoh/ot-harjoitusty-/blob/master/laskarit/kuva.png)
 
 ## Perusversion tarjoama toiminnallisuus
 
