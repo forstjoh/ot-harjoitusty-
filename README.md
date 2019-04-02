@@ -1,7 +1,13 @@
-Hei
+# Opintojenseurantaseurantajärjestelmä
 
-Minulla ei toiminut komentorivillä maven oikein, joten olen tehnyt nämä netbeansilla. Olen tallentanut kaikki tekemäni tiedostoon: palautus.txt 
+Opintojen seurantajärjestelmä mahdollistaa opiskelijan kirjata kurssien
+muistiinpanot yksittäisen kurssin listalle. Samalla listalla on koottuna
+myös kurssin tila, tenttipäivä ja arvosana. Sovellusta on mahdollista käyttää
+useamman rekisteröityneen käyttäjän, joilla on kaikilla omat kurssilistansa.
 
-Harjoitustyön vaatimusmäärittelyihin tein käyttöliittymäluonnoksen mutta en saanut liitettyä sitä vaatimusdokumenttiin. Se löytyy nyt erikseen ot-harjoitustyö kansion alta.
+## Dokumentaatio
 
-Linkin luonti täältä vaatimusmäärittelydokuun täytyy vielä katsoa, kun ei nyt onnistunut.
+[Vaatimusmäärittely]https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/vaatimusmaarittely.md
+
+Työaikakirjanpito 
+
