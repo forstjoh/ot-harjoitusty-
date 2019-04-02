@@ -5,8 +5,8 @@ muistiinpanot yksittäisen kurssin listalle. Samalla listalla on koottuna
 myös kurssin tila, tenttipäivä ja arvosana. Sovellusta on mahdollista käyttää
 useamman rekisteröityneen käyttäjän, joilla on kaikilla omat kurssilistansa.
 
-""Huom! Jätin liian vähän aikaa koodauksen aloittamiselle, kun piti kerrata
- niin paljon. Otan kiinni vaaditut tehtävät ensi viikonlopun aikana.""
+**Huom! Jätin liian vähän aikaa koodauksen aloittamiselle, kun piti kerrata
+ niin paljon. Otan kiinni vaaditut tehtävät ensi viikonlopun aikana.**
 
 ## Dokumentaatio
 
