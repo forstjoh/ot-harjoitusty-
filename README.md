@@ -7,7 +7,7 @@ useamman rekisteröityneen käyttäjän, joilla on kaikilla omat kurssilistansa.
 
 ## Dokumentaatio
 
-https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/vaatimusmaarittely.md "Vaatimusmäärittely"
+[https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/vaatimusmaarittely.md][Vaatimusmäärittely]
 
 Työaikakirjanpito 
 
