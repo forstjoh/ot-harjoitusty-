@@ -1,4 +1,4 @@
-# Opintojenseurantaseurantajärjestelmä
+# Opintojenseurantajärjestelmä
 
 Opintojen seurantajärjestelmä mahdollistaa opiskelijan kirjata kurssien
 muistiinpanot yksittäisen kurssin listalle. Samalla listalla on koottuna
