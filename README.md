@@ -16,3 +16,22 @@ https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjest
 Työaikakirjanpito
 https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/tuntikirjanpito.md 
 
+## Komentorivitoiminnot
+
+*Testaus*
+
+Testit suoritetaan komennolla
+
+	mvn test
+
+Testikattavuusraportti luodaan komennolla
+
+	mvn jacoco:report
+
+## Checkstyle
+
+Tiedostoon checkstyle.xml määrittelemät tarkistukset suoritetaan komennolla
+
+	mvn jxr:jxr checkstyle:checkstyle
+
+Mahdolliset virheilmoitukset selviävät avaamalla selaimen tiedosto target/site/checkstyle.html
