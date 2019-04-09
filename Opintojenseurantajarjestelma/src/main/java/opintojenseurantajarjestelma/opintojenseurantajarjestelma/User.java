@@ -5,6 +5,7 @@
  */
 package opintojenseurantajarjestelma.opintojenseurantajarjestelma;
 
+import java.util.*;
 /**
  *
  * @author forstjoh
@@ -12,10 +13,13 @@ package opintojenseurantajarjestelma.opintojenseurantajarjestelma;
 public class User {
     private String name;
     private String username;
-
+    public ArrayList<Course> Cources = new ArrayList<Course>();
+    
+    
     public User(String name1, String user) {
         this.name = name1;
         this.username = user;
+        this.loadCources();
     }
 
     public String getName() {
@@ -24,7 +28,15 @@ public class User {
 
     public String getUsername() {
         return username;
-    }    
+    }  
+    
+    public void loadCources() {
+        Cources.add(new Course(" x", "1 ", "d ", 2, "y "));
+	Cources.add(new Course(" a", "2 ", "f ", 2, "h "));
+        Cources.add(new Course(" s", "3 ", "g ", 2, "h "));
+        
+    }  
+    
 
     @Override
     public boolean equals(Object obj) {
