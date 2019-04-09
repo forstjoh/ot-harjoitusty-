@@ -8,5 +8,8 @@
 | 1.4 | 1 | projektiin liittyvää työtä, kuten työaikakirjanpito |
 | 2.4 | 3 | Ohjelmoinnin jatkokurssin ja JavaFX kertausta 
 | 2.4 | 1 | ohjelman koodausta |
-| yht | 11 |
+| 7.4 | 3 | JavaFX kertaamista |
+| 8.4 | 2 | edellisen viikon korjailua, mistä maininta Labtoolissa |
+| 9.4 | 5 | ohjelman tekoa |
+| yht | 21 |
 

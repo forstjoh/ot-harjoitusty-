@@ -15,7 +15,7 @@ Kaikki käyttäjät ovat samalla roolilla.
 ## Käyttöliittymäluonnos
 
 Kuva:
-!(https://github.com/forstjoh/ot-harjoitusty-/blob/master/laskarit/kuva.png)
+!(https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/kuva.png)
 
 ## Perusversion tarjoama toiminnallisuus
 
