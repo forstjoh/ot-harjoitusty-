@@ -10,8 +10,7 @@ useamman rekisteröityneen käyttäjän, joilla on kaikilla omat kurssilistansa.
 
 [Vaatimusmäärittely](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/vaatimusmaarittely.md)
 
-Työaikakirjanpito
-https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/tuntikirjanpito.md 
+[Työaikakirjanpito](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/tuntikirjanpito.md) 
 
 ## Komentorivitoiminnot
 
