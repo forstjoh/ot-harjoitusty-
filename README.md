@@ -16,7 +16,7 @@ useamman rekisteröityneen käyttäjän, joilla on kaikilla omat kurssilistansa.
 
 ## Releaset
 
-[Viikko 5]()
+[Viikko 5](https://github.com/forstjoh/ot-harjoitusty-/releases/tag/viikko5)
 
 ## Komentorivitoiminnot
 
