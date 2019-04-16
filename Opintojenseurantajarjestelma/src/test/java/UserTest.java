@@ -29,13 +29,13 @@ public class UserTest {
     }
     @Test
     public void nameTest(){
-        User user = new User();
-        assertEquals("name",user.getName());   
+        User user = new User("a","b");
+        assertEquals("a",user.getName());   
     }    
     @Test
     public void userNameTest(){
-        User user = new User();
-        assertEquals("userName",user.getName());     
+        User user = new User("a","b");
+        assertEquals("b",user.getUsername());     
     }    
    
 }

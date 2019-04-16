@@ -12,10 +12,7 @@ public class Course {
     private int score;
     private String notes;
     
-    public Course(){
-      
-    }
-
+   
     public Course(String coNa, String sta, String eDay, int sco, String note) {
         this.courseName = coNa;
         this.status = sta;

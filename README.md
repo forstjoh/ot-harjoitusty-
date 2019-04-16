@@ -14,6 +14,9 @@ useamman rekisteröityneen käyttäjän, joilla on kaikilla omat kurssilistansa.
 
 [Työaikakirjanpito](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/tuntikirjanpito.md) 
 
+## Releaset
+
+[Viikko 5]()
 
 ## Komentorivitoiminnot
 
