@@ -2,9 +2,9 @@
 
 ## Sovelluslogiikka
 
-[Luokkakaavio]()
+[Luokkakaavio](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/luokkakaavio.png)
 
 
 ## Päätoiminnallisuudet
 
-[Sekvenssikaavio]()
+[Sekvenssikaavio](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/sekvenssikaavio.png)
