@@ -6,20 +6,20 @@
 package opintojenseurantajarjestelma.opintojenseurantajarjestelma;
 
 import java.util.*;
-/**
- *
- * @author forstjoh
- */
+
 public class User {
     private String name;
     private String username;
     public ArrayList<Course> Cources = new ArrayList<Course>();
     
+    public User(){
+        
+    }
     
     public User(String name1, String user) {
         this.name = name1;
         this.username = user;
-        this.loadCources();
+        if (name1.equalsIgnoreCase("Vera")) this.loadCources();
     }
 
     public String getName() {
@@ -30,10 +30,32 @@ public class User {
         return username;
     }  
     
+   public void setName(String newname) {
+        this.name = newname;
+    }
+
+    public void setUsername(String newusername) {
+        this.username = newusername;
+    }  
+    
+    
+    public ArrayList<String> getCources()
+    {
+        ArrayList<String> data = new ArrayList<String>();
+        
+        for(Course cour:Cources)  
+        {    
+            data.add(cour.getCourseName());
+        }
+        
+        return data; 
+    }
+    
+    
     public void loadCources() {
-        Cources.add(new Course(" x", "1 ", "d ", 2, "y "));
-	Cources.add(new Course(" a", "2 ", "f ", 2, "h "));
-        Cources.add(new Course(" s", "3 ", "g ", 2, "h "));
+        Cources.add(new Course(" sdd21313x", "1 ", "d ", 2, "y "));
+	Cources.add(new Course(" gga234332a", "2 ", "f ", 2, "h "));
+        Cources.add(new Course(" aa234234324s", "3 ", "g ", 2, "h "));
         
     }  
     

@@ -11,5 +11,9 @@
 | 7.4 | 3 | JavaFX kertaamista |
 | 8.4 | 2 | edellisen viikon korjailua, mistä maininta Labtoolissa |
 | 9.4 | 5 | ohjelman tekoa |
-| yht | 21 |
+| 15.4 | 2 | edellisen viikon korjaukset |
+| 16.4 | 2 | luokka- ja sekvenssikaaviot |
+| 16.4 | 3 | ohjelman tekoa |
+| 16.4 | 2 | issue kuntoon, jar-tiedosto, release ym viikon 5 tehtäviä |
+| yht | 30 |
 

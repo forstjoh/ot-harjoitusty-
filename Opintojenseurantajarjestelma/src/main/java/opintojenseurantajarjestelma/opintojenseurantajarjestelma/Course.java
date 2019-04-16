@@ -5,16 +5,16 @@
  */
 package opintojenseurantajarjestelma.opintojenseurantajarjestelma;
 
-/**
- *
- * @author forstjoh
- */
 public class Course {
     private String courseName;
     private String status;
     private String examDay;
     private int score;
     private String notes;
+    
+    public Course(){
+      
+    }
 
     public Course(String coNa, String sta, String eDay, int sco, String note) {
         this.courseName = coNa;

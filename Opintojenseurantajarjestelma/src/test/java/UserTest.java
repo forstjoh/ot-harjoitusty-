@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 
+import opintojenseurantajarjestelma.opintojenseurantajarjestelma.Course;
+import opintojenseurantajarjestelma.opintojenseurantajarjestelma.User;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -11,34 +13,29 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author forstjoh
- */
+
 public class UserTest {
     
-    public UserTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
+    User user;
     
     @Before
     public void setUp() {
     }
     
-    @After
-    public void tearDown() {
+    @Test
+    public void userTest(){
+        User user = new User();
+        assertTrue(user!=null);
     }
-
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
+    @Test
+    public void nameTest(){
+        User user = new User();
+        assertEquals("name",user.getName());   
+    }    
+    @Test
+    public void userNameTest(){
+        User user = new User();
+        assertEquals("userName",user.getName());     
+    }    
+   
 }

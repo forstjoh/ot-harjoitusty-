@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import opintojenseurantajarjestelma.opintojenseurantajarjestelma.Course;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -11,34 +12,49 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author forstjoh
- */
+
 public class CourseTest {
     
-    public CourseTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
+    Course course;
     
     @Before
-    public void setUp() {
+    public void setUp() {   
     }
     
-    @After
-    public void tearDown() {
+    @Test
+    public void courseTest(){
+        Course course = new Course();
+        assertTrue(course!=null);
     }
-
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
+    
+    @Test
+    public void courseNameTest(){
+        Course course= new Course();
+        assertEquals("courseName",course.getStatus());    
+    }    
+    
+    @Test
+    public void statusTest(){
+        Course course= new Course();
+        assertEquals("status",course.getStatus());    
+    }
+    
+    @Test
+    public void dayTest(){
+        Course course = new Course();
+        assertEquals("examDay",course.getexamDay());
+    }
+    @Test
+    public void scoreTest(){
+        Course course = new Course();
+        assertEquals("score",course.getScore());
+    }
+    @Test
+    public void NoteTest(){
+        Course course = new Course();
+        assertEquals("notes",course.getNotes());
+    }
+   
+   
+   
 }
