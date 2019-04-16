@@ -16,5 +16,5 @@
 | 16.4 | 2 | luokka- ja sekvenssikaaviot |
 | 16.4 | 3 | ohjelman tekoa |
 | 16.4 | 2 | issue kuntoon, jar-tiedosto, release ym viikon 5 tehtäviä |
-| yht | 30 |
+| yht | 33 |
 
