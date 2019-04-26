@@ -7,6 +7,8 @@ package opintojenseurantajarjestelma.opintojenseurantajarjestelma;
 
 import java.util.*;
 import javafx.application.Application;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
@@ -24,14 +26,15 @@ import javafx.stage.Stage;
 
 public class StudyJournalUI extends Application {
     
-    @Override
+ @Override
     public void start(Stage window) {
         
-       String user = "Vera";
-        String username ="VE";
+        String user = "Johanna";
+        String username ="JF";
         
         Users users = new Users(user, username);
-        
+        //User activeuser = new User(user, username); 
+        //users.loadusers(null);
         
         Boolean loggedinuser = true;
 
@@ -59,6 +62,113 @@ public class StudyJournalUI extends Application {
         updatebutton.setText("UPDATE");
         
         ListView courcelist = new ListView();
+        
+        /**---------------------------------------**/
+        
+        courcelist.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
+        @Override
+        public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+        
+        /**---------------------------------------------**/
+        
+         
+		VBox NEWbox = new VBox();
+		TextField courseName = new TextField();
+		TextField status = new TextField();
+		TextField examday = new TextField();
+		TextField score = new TextField();
+		TextField notes = new TextField();
+		Course C = new Course(" "," "," "," "," " );
+		C = users.activeuser.getCource(newValue);
+		
+		courseName.setText(C.getCourseName());
+		status.setText(C.getStatus()); 
+		
+		examday.setText(C.getexamDay()); 
+		
+		score.setText(C.getScore());
+		notes.setText(C.getNotes());
+		
+                Button updatebutton = new Button("Modify cource data");
+		Button cancelbutton = new Button("Cancel");
+                
+		NEWbox.setSpacing(10);
+                
+		NEWbox.getChildren().add(new Label("Cource name"));
+                NEWbox.getChildren().add(courseName);
+                
+				NEWbox.getChildren().add(new Label("Status"));        
+                NEWbox.getChildren().add(status);
+				
+				NEWbox.getChildren().add(new Label("Exam day"));        
+                NEWbox.getChildren().add(examday);
+				
+				NEWbox.getChildren().add(new Label("Score"));        
+                NEWbox.getChildren().add(score);
+				
+				NEWbox.getChildren().add(new Label("notes"));        
+                NEWbox.getChildren().add(notes);
+				
+				
+                NEWbox.getChildren().add(updatebutton);
+                NEWbox.getChildren().add(cancelbutton);
+                               
+                
+                Scene newcourcescene = new Scene(NEWbox, 300, 500);
+                Stage newcourcestage = new Stage();
+                newcourcestage.setScene(newcourcescene);
+                newcourcestage.setTitle("New cource for "+users.activeuser);
+                newcourcestage.show();
+                cancelbutton.setOnAction(new EventHandler<ActionEvent>() 
+               {
+                       @Override public void handle(ActionEvent event) 
+                       {
+                               // STORE AND CLOSE ALL
+                          newcourcestage.close(); 
+
+                       }
+               });
+
+                updatebutton.setOnAction(new EventHandler<ActionEvent>() 
+                {
+                    @Override public void handle(ActionEvent event) 
+                    {
+ 
+                      String ncourseName = courseName.getText();
+                      String nstatus = status.getText();  
+					  String nexamday = examday.getText();  
+					  String nscore = score.getText();  
+					  String nnotes = notes.getText();  
+			          
+                      if (courseName.getText().trim().isEmpty() == false)
+                      {
+                        
+						users.activeuser.modifyCource(ncourseName, nstatus, nexamday, nscore, nnotes);
+			
+                                                newcourcestage.close();						
+						
+                      }
+                    }
+                     
+                });
+        
+        
+        
+        
+        
+        
+        
+            
+         /**---------------------------------------------**/
+        
+        
+        }
+});
+
+        
+        
+        
+        
         
         /**LOG-IN BUTTON PRESSED **/
          
@@ -153,8 +263,9 @@ public class StudyJournalUI extends Application {
         {
             @Override public void handle(ActionEvent event) 
             {
-                // STORE AND CLOSE ALL
-               window.close(); 
+                courcelist.getItems().clear();
+                users.activeuser = null;
+                window.setTitle("PLEASE LOG IN");                
                 
             }
         });
@@ -168,7 +279,7 @@ public class StudyJournalUI extends Application {
                 // STORE AND CLOSE ALL
                ArrayList<String> data = new ArrayList<String>();
               courcelist.getItems().clear();              
-             
+             if (users.activeuser == null) return;
               data = users.getActiveuser().getCources();
               window.setTitle("Courses of active user " + users.activeuser.getName()+ " määrä "+ data.size());         
               if (data.size() > 0) { 
@@ -182,6 +293,116 @@ public class StudyJournalUI extends Application {
                
             }
         });
+        /**----------------------------------------------------------------------------------------**/
+       
+        
+
+  /**NEW BUTTON PRESSED **/
+         
+        newbutton.setOnAction(new EventHandler<ActionEvent>() 
+        {
+            @Override public void handle(ActionEvent event) 
+            {
+		if (users.activeuser == null) return;
+
+			   // open dialog for new notes
+               
+                VBox NEWbox = new VBox();
+                TextField courseName = new TextField();
+                TextField status = new TextField();
+                TextField examday = new TextField();
+                TextField score = new TextField();
+                TextField notes = new TextField();
+
+                Button createbutton = new Button("Create new cource");
+		Button cancelbutton = new Button("Cancel");
+                
+		NEWbox.setSpacing(10);
+                
+		NEWbox.getChildren().add(new Label("Cource name"));
+                NEWbox.getChildren().add(courseName);
+                NEWbox.getChildren().add(new Label("Status"));        
+                NEWbox.getChildren().add(status);
+				
+				NEWbox.getChildren().add(new Label("Exam day"));        
+                NEWbox.getChildren().add(examday);
+				
+				NEWbox.getChildren().add(new Label("Score"));        
+                NEWbox.getChildren().add(score);
+				
+				NEWbox.getChildren().add(new Label("notes"));        
+                NEWbox.getChildren().add(notes);
+				
+				
+                NEWbox.getChildren().add(createbutton);
+                NEWbox.getChildren().add(cancelbutton);
+                               
+                
+                Scene newcourcescene = new Scene(NEWbox, 300, 500);
+                Stage newcourcestage = new Stage();
+                newcourcestage.setScene(newcourcescene);
+                newcourcestage.setTitle("New cource for "+users.activeuser);
+                newcourcestage.show();
+                cancelbutton.setOnAction(new EventHandler<ActionEvent>() 
+               {
+                       @Override public void handle(ActionEvent event) 
+                       {
+                               // STORE AND CLOSE ALL
+                          newcourcestage.close(); 
+
+                       }
+               });
+
+                
+                
+                
+                /**LOG BUTTON PRESSED **/
+                createbutton.setOnAction(new EventHandler<ActionEvent>() 
+                {
+                    @Override public void handle(ActionEvent event) 
+                    {
+ 
+                      String ncourseName = courseName.getText();
+                      String nstatus = status.getText();  
+					  String nexamday = examday.getText();  
+					  String nscore = score.getText();  
+					  String nnotes = notes.getText();  
+			          
+                      if (courseName.getText().trim().isEmpty() == false)
+                      {
+                        
+						users.activeuser.addCource(ncourseName, nstatus, nexamday, nscore, nnotes);
+						newcourcestage.close();						
+						
+                      }
+                    }
+                     
+                });
+			   
+			   		
+				
+				
+            }
+        });
+		
+		
+		
+		
+        
+        
+        
+        
+       /**---------------------------------------------------------------------------------------------**/
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         courcelist.setPrefSize(400, 2);
         courcelist.setEditable(true);
@@ -202,7 +423,10 @@ public class StudyJournalUI extends Application {
         window.show();
     }
 
-                   
+                  
+  
+    
+  
    
     public static void main(String[] args) 
     {

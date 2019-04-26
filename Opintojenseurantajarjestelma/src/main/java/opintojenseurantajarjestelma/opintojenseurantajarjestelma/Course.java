@@ -9,11 +9,11 @@ public class Course {
     private String courseName;
     private String status;
     private String examDay;
-    private int score;
+    private String score;
     private String notes;
     
    
-    public Course(String coNa, String sta, String eDay, int sco, String note) {
+ public Course(String coNa, String sta, String eDay, String sco, String note) {
         this.courseName = coNa;
         this.status = sta;
         this.examDay = eDay;
@@ -21,6 +21,15 @@ public class Course {
         this.notes = note;
     }
 
+    public void update(String coNa, String sta, String eDay, String sco, String note) {
+        this.courseName = coNa;
+        this.status = sta;
+        this.examDay = eDay;
+        this.score = sco;
+        this.notes = note;
+    }
+    
+    
     public String getCourseName() {
         return courseName;
     }
@@ -33,7 +42,7 @@ public class Course {
         return examDay;
     }
     
-    public int getScore() {
+    public String getScore() {
         return score;
     }
     

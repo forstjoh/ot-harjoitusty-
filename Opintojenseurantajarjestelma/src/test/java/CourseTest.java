@@ -23,35 +23,35 @@ public class CourseTest {
     
     @Test
     public void courseTest(){
-        Course course = new Course("1", "2", "3", 4, "5");
+        Course course = new Course("1", "2", "3","4", "5");
         assertTrue(course!=null);
     }
     
     @Test
     public void courseNameTest(){
-        Course course= new Course("1", "2", "3", 4, "5");
+        Course course= new Course("1", "2", "3","4", "5");
         assertEquals("coNa",course.getStatus());    
     }    
     
     @Test
     public void statusTest(){
-        Course course= new Course("1", "2", "3", 4, "5");
+        Course course= new Course("1", "2", "3","4", "5");
         assertEquals("status",course.getStatus());    
     }
     
     @Test
     public void dayTest(){
-        Course course = new Course("1", "2", "3", 4, "5");
+        Course course = new Course("1", "2", "3","4", "5");
         assertEquals("examDay",course.getexamDay());
     }
     @Test
     public void scoreTest(){
-        Course course = new Course("1", "2", "3", 4, "5");
+        Course course = new Course("1", "2", "3","4", "5");
         assertEquals("score",course.getScore());
     }
     @Test
     public void NoteTest(){
-        Course course = new Course("1", "2", "3", 4, "5");
+        Course course = new Course("1", "2", "3","4", "5");
         assertEquals("notes",course.getNotes());
     }
    

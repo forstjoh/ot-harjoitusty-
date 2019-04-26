@@ -22,11 +22,11 @@ public class UserTest {
     public void setUp() {
     }
     
-    @Test
+    /*@Test
     public void userTest(){
         User user = new User();
         assertTrue(user!=null);
-    }
+    }*/
     @Test
     public void nameTest(){
         User user = new User("a","b");

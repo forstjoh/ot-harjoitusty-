@@ -9,6 +9,7 @@ import java.util.ArrayList;
 
 
 public class Users {
+
     public ArrayList<User> Userlist;
     public User activeuser;
     
@@ -58,5 +59,6 @@ public class Users {
   public User getActiveuser()
   {
       return activeuser;
-}
+  
+  }   
 }
