@@ -13,6 +13,8 @@ useamman rekisteröityneen käyttäjän, joilla on kaikilla omat kurssilistansa.
 
 [Arkkitehtuurikuvaus](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/arkkitehtuuri.md)
 
+[Testausdokumentti](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/testaus.md)
+
 [Työaikakirjanpito](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/tuntikirjanpito.md) 
 
 ## Releaset
