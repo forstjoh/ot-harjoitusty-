@@ -45,7 +45,7 @@ Jarin komento
 
 JavaDoc komento
 
-mvn javadoc:javadoc
+	mvn javadoc:javadoc
 
 **Checkstyle**
 
