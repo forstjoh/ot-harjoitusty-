@@ -27,18 +27,31 @@ useamman rekisteröityneen käyttäjän, joilla on kaikilla omat kurssilistansa.
 
 **Testaus**
 
-Testit suoritetaan komennolla
+Testit komennolla
 
 	mvn test
 
-Testikattavuusraportti luodaan komennolla
+Testikattavuusraportti komennolla
 
 	mvn jacoco:report
 
-## Checkstyle
+**Jar**
 
-Tiedostoon checkstyle.xml määrittelemät tarkistukset suoritetaan komennolla
+Jarin komento
+
+	mvn package
+
+**JavaDoc**
+
+JavaDoc komento
+
+mvn javadoc:javadoc
+
+**Checkstyle**
+
+Checkstyle komento
 
 	mvn jxr:jxr checkstyle:checkstyle
 
-Mahdolliset virheilmoitukset selviävät avaamalla selaimen tiedosto target/site/checkstyle.html
+Selaimessa target/checkstyle.html on tiedot tallennettuna
+
