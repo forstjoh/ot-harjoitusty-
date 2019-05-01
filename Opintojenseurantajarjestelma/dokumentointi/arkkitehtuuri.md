@@ -16,12 +16,12 @@ update = päivittäminen uusilla tiedoilla näkymä
 
 ## Sovelluslogiikka
 
-[Luokkakaavio](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/luokkakaavio.png)
+[Luokkakaavio](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/kuvat/luokkakaavio.png)
 
 
 ## Päätoiminnallisuudet
 
-[Sekvenssikaavio](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/sekvenssikaavio.png)
+[Sekvenssikaavio](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/kuvat/sekvenssikaavio.png)
 
 ## Tietojen pysyväistallennus 
 
