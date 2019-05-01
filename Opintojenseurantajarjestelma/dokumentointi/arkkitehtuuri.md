@@ -21,7 +21,7 @@ update = päivittäminen uusilla tiedoilla näkymä
 
 ## Päätoiminnallisuudet
 
-[Sekvenssikaavio](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/kuvat/sekvenssikaavio.png)
+[Sekvenssikaavio](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/kuvat/sekvenssikaavio.png)
 
 ## Tietojen pysyväistallennus 
 
