@@ -16,7 +16,7 @@ update = päivittäminen uusilla tiedoilla näkymä
 
 ## Sovelluslogiikka
 
-[Luokkakaavio](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/kuvat/luokkakaavio.png)
+[Luokkakaavio](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/kuvat/luokkakaavio.png)
 
 
 ## Päätoiminnallisuudet
