@@ -27,7 +27,7 @@ Ohjelman käynnistämisen jälkeen avautuu alla oleva pääikkuna. Ohjelmaan pit
 Ensimmäisellä käyttökerralla ainakin yksi käyttäjä pitää luoda.
 Ohjelmassa voi olla vain yksi aktiivinen käyttäjä kerrallaan.
 
-!(https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kuvat/newuser.png)
+![kuva](https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kuvat/newuser.png)
 
 Pääikkunassa on toimet:
  
