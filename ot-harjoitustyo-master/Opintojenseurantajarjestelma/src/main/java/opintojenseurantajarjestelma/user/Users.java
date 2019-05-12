@@ -10,128 +10,127 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
+
 /**
- * 
+ * useiden käyttäjien tietoja sisältävä luokka.
  * @author forstjoh
  */
 public class Users  implements Serializable {
 
-    public ArrayList<User> UserList;
+    public ArrayList<User> userlist;
     public User activeUser = null;
     public String userFile = null;
     
     /**
-     * 
-     * @param fileName Name of the where data is stored.
+     * Käyttäjien listaus.
+     * @param fileName datan tiedot
      */
     public Users(String fileName) {
-        UserList = new ArrayList<User>();
+        userlist = new ArrayList<User>();
         this.loadUsersFromFile(fileName);
         userFile = fileName;   
     }
     
     /**
-     * 
-     * @param name1
-     * @param user 
+     * Käyttäjien tiedot.
+     * @param name1 nimi
+     * @param user käyttäjätunnus
      */
     public Users(String name1, String user) {
-        UserList = new ArrayList<User>();
-        activeUser = new User(name1,user);
+        userlist = new ArrayList<User>();
+        activeUser = new User(name1, user);
     }
     
     /**
-     * 
-     * @param fileName 
+     * Käyttäjän hakeminen tiedostosta.
+     * @param fileName tiedostonnimi
      */
-    private void loadUsersFromFile(String fileName){
-    // should trow error
-        if (fileName == null) return;
-            // file is there and it is not dir
+    private void loadUsersFromFile(String fileName) {
+        if (fileName == null) {
+            return;
+        }
         File f = new File(fileName);
-        if(f.exists() && !f.isDirectory()) { 
+        if (f.exists() && !f.isDirectory()) { 
             try {
                 FileInputStream fis = new FileInputStream(fileName);
                 ObjectInputStream ois = new ObjectInputStream(fis);
-                UserList = (ArrayList)ois.readObject();
+                userlist = (ArrayList) ois.readObject();
                 ois.close();  
-            }
-            catch (FileNotFoundException e) {
+            } catch (FileNotFoundException e) {
                 e.printStackTrace();
-            }
-            catch (IOException e) {
+            } catch (IOException e) {
                 e.printStackTrace();
-            }
-            catch (ClassNotFoundException e) {
+            } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             }
         }
         return;
-   }
+    }
     
    /**
-    * 
-    * @param user
-    * @return 
+    * Käyttäjän lataaminen.
+    * @param user käyttäjätunnus
+    * @return käyttäjälista
     */
-    public ArrayList<User> loadusers(User user){
-        if (user != null) UserList.add(user);
-        return UserList;
+    public ArrayList<User> loadusers(User user) {
+        if (user != null) {
+            userlist.add(user);
+        } 
+        return userlist;
     }
     
     /**
-     * 
-     * @param user
-     * @param userId
-     * @return 
+     * Käyttäjän lisääminen listalle.
+     * @param user käyttäjä
+     * @param userId käyttäjätunnus
+     * @return uusi käyttäjä
      */
-    public User addUser(String user, String userId){
-      
-        for(User usr:UserList)  {    
+    public User addUser(String user, String userId) {
+        for (User usr:userlist)  {    
            // if (usr.getUsername().equals(userid)) return false;
         }
-      
         User newUser = new User(user, userId); 
-        UserList.add(newUser);
+        userlist.add(newUser);
         this.activeUser =  newUser;
         return newUser;
     } 
     
     /**
-     * 
-     * @param userId
-     * @return 
+     * Käyttäjän olemassaolo.
+     * @param userId käyttäjän id
+     * @return tosi epätosi
      */
     public boolean setActiveUser(String userId)  {
-        for(User usr:UserList)  {    
-           if (usr.getUsername().equals(userId)){
-               this.activeUser = usr; 
-               return true;
+        for (User usr:userlist) {    
+            if (usr.getUsername().equals(userId)) {
+                this.activeUser = usr; 
+                return true;
             } 
         }
         return false;
     }
     
     /**
-     * 
-     * @return 
+     * Aktiivisen käyttäjän hakeminen.
+     * @return käyttäjä
      */
-    public User getActiveUser(){
-      return activeUser;
+    public User getActiveUser() {
+        return activeUser;
     }
 
+    /**
+     * Tiedostoon tallentaminen.
+     */
     public void saveToFile() {
         try {
          //Write Student array to file.
             FileOutputStream fos = new FileOutputStream(userFile);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
-            oos.writeObject(UserList);
+            oos.writeObject(userlist);
             oos.close();
-        }
-        catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }      

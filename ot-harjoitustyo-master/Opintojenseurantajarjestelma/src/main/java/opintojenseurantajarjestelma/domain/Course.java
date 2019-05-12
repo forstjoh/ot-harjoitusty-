@@ -6,24 +6,26 @@
 package opintojenseurantajarjestelma.domain;
 
 import java.io.Serializable;
+
 /**
- * 
+ * Kurssin tietoja sisältävä luokka.
  * @author forstjoh
  */
-public class Course implements Serializable{
+public class Course implements Serializable {
     private String courseName;
     private String status;
     private String examDay;
     private String score;
     private String notes;
 
+
     /**
-     * 
-     * @param coNa
-     * @param sta
-     * @param eDay
-     * @param sco
-     * @param note 
+     * Kurssin tiedot.
+     * @param coNa kurssin nimi
+     * @param sta kurssin status
+     * @param eDay kurssin tenttipäivä
+     * @param sco kurssin arvosana
+     * @param note kurssin muistiinpanot
      */
     public Course(String coNa, String sta, String eDay, String sco, String note) {
         this.courseName = coNa;
@@ -32,6 +34,10 @@ public class Course implements Serializable{
         this.score = sco;
         this.notes = note;
     }
+    
+    /**
+     * Kurssimetodi.
+     */
     public Course() {
         this.courseName = null;
         this.status = null;
@@ -41,12 +47,12 @@ public class Course implements Serializable{
     }
 
     /**
-     * 
-     * @param coNa
-     * @param sta
-     * @param eDay
-     * @param sco
-     * @param note 
+     * Päivitysluokka.
+     * @param coNa kurssin nimi
+     * @param sta kurssin status
+     * @param eDay kurssin tenttipäivä
+     * @param sco kurssin arvosana
+     * @param note kurssin muistiinpanot
      */
     public void update(String coNa, String sta, String eDay, String sco, String note) {
         this.courseName = coNa;
@@ -57,40 +63,40 @@ public class Course implements Serializable{
     }
     
     /**
-     * 
-     * @return 
+     * Metodi palauttaa kurssin nimen.
+     * @return kurssinimi
      */
     public String getCourseName() {
         return courseName;
     }
     
     /**
-     * 
-     * @return 
+     * Metodi palauttaa kurssin statuksen.
+     * @return status
      */
     public String getStatus() {
         return status;
     }    
     
     /**
-     * 
-     * @return 
+     * Metodi palauttaa kurssin tenttipäivän.
+     * @return tenttipäivä
      */
     public String getExamDay() {
         return examDay;
     }
     
     /**
-     * 
-     * @return 
+     * Metodi palauttaa kurssin arvosanan.
+     * @return arvosana
      */
     public String getScore() {
         return score;
     }
     
     /**
-     * 
-     * @return 
+     * Metodi palauttaa kurssin muistiinpanot.
+     * @return muistiinpanot
      */
     public String getNotes() {
         return notes;

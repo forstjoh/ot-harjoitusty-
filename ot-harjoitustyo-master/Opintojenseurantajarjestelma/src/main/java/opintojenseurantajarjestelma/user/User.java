@@ -11,18 +11,18 @@ import java.io.Serializable;
 import java.util.*;
 
 /**
- * 
+ * Käyttäjän tietoja sisältävä luokka.
  * @author forstjoh
  */
 public class User implements Serializable {
     private String name;
     private String username;
-    public ArrayList<Course> Cources = new ArrayList<Course>();
+    public ArrayList<Course> courses = new ArrayList<Course>();
     
     /**
-     * 
-     * @param name1
-     * @param user 
+     * Käyttäjän tiedot.
+     * @param name1 nimi
+     * @param user käyttäjätunnus
      */
     public User(String name1, String user) {
         this.name = name1;
@@ -31,99 +31,104 @@ public class User implements Serializable {
     }
     
     /**
-     * 
-     * @return 
+     * Metodi palauttaa käyttäjän nimen.
+     * @return nimi
      */
     public String getName() {
         return this.name;
     }
     
     /**
-     * 
-     * @return 
+     * Metodi palauttaa käyttäjän käyttäjätunnuksen.
+     * @return käyttäjätunnus
      */
     public String getUsername() {
         return this.username;
     }  
     
     /**
-     * 
-     * @param newName 
+     * Nimen asettaminen.
+     * @param newName nimi
      */
     public void setName(String newName) {
         this.name = newName;
     }
     
     /**
-     * 
-     * @param newUsername 
+     * Käyttäjätunnuksen asettamninen.
+     * @param newUsername käyttäjätunnus
      */
     public void setUsername(String newUsername) {
         this.username = newUsername;
     }  
     
     /**
-     * 
-     * @return 
+     * Käyttäjän kurssilista.
+     * @return kurssitiedot
      */
-    public ArrayList<String> getCources(){
+    public ArrayList<String> getCources() {
         ArrayList<String> data = new ArrayList<String>();
         
-        for(Course cour:Cources)  {    
+        for (Course cour:courses)  {    
             data.add(cour.getCourseName());
         }
         return data; 
     }
     
     /**
-     * 
-     * @param key
-     * @return 
+     * Käyttäjän kurssitietojen palauttaminen.
+     * @param key kurssiavain
+     * @return kurssin tiedot
      */
-    public Course getCource(String key){
-       for(Course cour:Cources)  {    
-            if (cour.getCourseName().equals(key)) return cour;
+    public Course getCource(String key) {
+        for (Course cour:courses)  {    
+            if (cour.getCourseName().equals(key)) {
+                return cour;
+            }
         } 
         return null;
     }
     
     /**
-     * 
-     * @param ncourseName
-     * @param nstatus
-     * @param nexamday
-     * @param nscore
-     * @param nnotes 
+     * Kurssin tietojen muokkaaminen.
+     * @param ncourseName kurssin nimi
+     * @param nstatus kurssin status
+     * @param nexamday kurssin tenttipäivä
+     * @param nscore kurssin arvosana
+     * @param nnotes kurssin muistiinpanot
      */
-    public void modifyCource(String ncourseName, String nstatus, String nexamday, String nscore, String nnotes){
-        for(Course cour:Cources)  {    
+    public void modifyCource(String ncourseName, String nstatus, String nexamday, String nscore, String nnotes) {
+        for (Course cour:courses)  {    
             if (cour.getCourseName().equals(ncourseName)) {
                 cour.update(ncourseName, nstatus, nexamday, nscore, nnotes);          
             }
         }     
     }
 
+    /**
+     * Kurssin tietojen lataaminen.
+     */
     public void loadCources() {
-        Cources.add(new Course(" sdd21313x", "1 ", "d ", "2", "y "));
-	Cources.add(new Course(" gga234332a", "2 ", "f ", "2", "h "));
-        Cources.add(new Course(" aa234234324s", "3 ", "g ", "2", "h "));   
+        courses.add(new Course(" sdd21313x", "1 ", "d ", "2", "y "));
+        courses.add(new Course(" gga234332a", "2 ", "f ", "2", "h "));
+        courses.add(new Course(" aa234234324s", "3 ", "g ", "2", "h "));   
     }  
     
     /**
-     * 
-     * @param ncourseName
-     * @param nstatus
-     * @param nexamday
-     * @param nscore
-     * @param nnotes 
+     * Kurssien llisääminen.
+     * @param ncourseName kurssin nimi
+     * @param nstatus kurssin status
+     * @param nexamday kurssin tenttipäivä
+     * @param nscore kurssin arvosana
+     * @param nnotes kurssin muistiinpanot
      */
-    public void addCource(String ncourseName, String nstatus, String nexamday, String nscore, String nnotes){
-        Cources.add(new Course(ncourseName, nstatus, nexamday, nscore, nnotes));       
+    public void addCource(String ncourseName, String nstatus, String nexamday, String nscore, String nnotes) {
+        courses.add(new Course(ncourseName, nstatus, nexamday, nscore, nnotes));       
     }      
     
     /**
-     * 
-     * @param obj
+     * Käyttäjän palauttaminen.
+     * @param obj käyttäjä
      * @return 
      */
     @Override
