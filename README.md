@@ -9,13 +9,13 @@ useamman rekisteröityneen käyttäjän, joilla on kaikilla omat kurssilistansa.
 
 [Käyttöohje](https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kayttoohje.md)
 
-[Vaatimusmäärittely](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/vaatimusmaarittely.md)
+[Vaatimusmäärittely](https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/vaatimusmaarittely.md)
 
-[Arkkitehtuurikuvaus](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/arkkitehtuuri.md)
+[Arkkitehtuurikuvaus](https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/arkkitehtuuri.md)
 
-[Testausdokumentti](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/testaus.md)
+[Testausdokumentti](https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/testaus.md)
 
-[Työaikakirjanpito](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/tuntikirjanpito.md) 
+[Työaikakirjanpito](https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/tuntikirjanpito.md) 
 
 ## Releaset
 
