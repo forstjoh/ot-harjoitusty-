@@ -25,7 +25,7 @@ joilla on kaikilla omat kurssilistansa.
 
 [Viikko 6](https://github.com/forstjoh/ot-harjoitusty-/releases/tag/Viikko6)
 
-[Loppupalautus]()
+[Loppupalautus](https://github.com/forstjoh/ot-harjoitustyo/releases/tag/Loppupalautus)
 
 ## Komentorivitoiminnot
 
