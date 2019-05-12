@@ -3,7 +3,7 @@
 ## Sovelluksen tarkoitus
 
 Opintojen seurantajärjestelmä mahdollistaa opiskelijan kirjata kaikki 
-kurssit samlle listalle. Listalle voi kirjata vapaamuotoisesti kurssin 
+kurssit samalle listalle. Listalle voi kirjata vapaamuotoisesti kurssin 
 tietoja, kuten kurssin nimi, kurssin tila, tenttipäivä, arvosana ja
 muistiinpanoja kurssista.
 Sovellusta on mahdollista käyttää useamman rekisteröityneen käyttäjän, 
