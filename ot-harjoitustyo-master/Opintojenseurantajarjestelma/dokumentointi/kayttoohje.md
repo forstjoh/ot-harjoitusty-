@@ -4,7 +4,7 @@
 
 Ohjelma toimitetaan jar-tiedostona. Tiedoston (Opintojenseurantajärjestelmä) voi ladata alla olevasta linkistä
 
-[opintojenseurantajarjestelma.jar](https://github.com/forstjoh/ot-harjoitustyo/releases/tag/Viikko6)
+[opintojenseurantajarjestelma.jar](https://github.com/forstjoh/ot-harjoitustyo/releases/tag/Loppupalautus)
 
 Tee ohjelmalle oma hakemisto.
 
