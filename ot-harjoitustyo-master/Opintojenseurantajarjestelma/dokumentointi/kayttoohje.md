@@ -27,13 +27,13 @@ Ohjelman käynnistämisen jälkeen avautuu alla oleva pääikkuna. Ohjelmaan pit
 Ensimmäisellä käyttökerralla ainakin yksi käyttäjä pitää luoda.
 Ohjelmassa voi olla vain yksi aktiivinen käyttäjä kerrallaan.
 
-kuva
+()
 
 Pääikkunassa on toimet:
  
 **Login**: Olemassa olevan käyttäjän kirjautuminen tai uuden käyttäjän luominen
 
-kuva
+(https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kuvat/login.png)
 
 **Logout**: Kirjaa käyttäjän aktiivisen käyttäjän ulos.
 
@@ -46,15 +46,15 @@ kuva
 - *Create new course*: Tallentaa uuden kurssin tiedot muistiin
 - *Cancel*: Sulkee New Course ikkunan tallentamatta
 
-kuvat
+(https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kuvat/Kurssinluominen.png)
 
 **Update**: Päivittää käyttäjän kurssilistan.
 
-kuva
+(https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kuvat/Kurssit.png)
 
 **Save to File** : Tallentaa tiedot tiedostoon.
 
-
+(https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kuvat/Save.png)
 
 
 
