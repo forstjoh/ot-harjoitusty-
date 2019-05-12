@@ -244,7 +244,7 @@ public class StudyJournalUI extends Application {
         });
         /**----------------------------------------------------------------------------------------**/
 
-  /**NEW BUTTON PRESSED **/
+  /**NEW COURRSE BUTTON PRESSED **/
          
         newbutton.setOnAction(new EventHandler<ActionEvent>() {
             @Override public void handle(ActionEvent event) {
@@ -297,7 +297,7 @@ public class StudyJournalUI extends Application {
                     }
                });
       
-                /**LOG BUTTON PRESSED **/
+                /**CREATE BUTTON PRESSED **/
                 createbutton.setOnAction(new EventHandler<ActionEvent>() {
                     @Override public void handle(ActionEvent event) {
  

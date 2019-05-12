@@ -1,9 +1,9 @@
 # Opintojenseurantajärjestelmä
 
-Opintojen seurantajärjestelmä mahdollistaa opiskelijan kirjata itselleen
-kaikki kurssit samalle listalle, mihin voi laittaa tietoja kursseista. 
-Jokaiselle kurssille voi lisätä tietoja, kuten kurssin tila, tenttipäivä,
-arvosana ja muistiinpanoja kurssista. 
+Opintojen seurantajärjestelmä mahdollistaa opiskelijan kirjata kaikki kurssit
+samalle listalle. Listalle voi kirjata vapaamuotoisesti kurssin tietoja, kuten
+kurssin nimi, kurssin tila, tenttipäivä, arvosana ja muistiinpanoja
+kurssista.   
 Sovellusta on mahdollista käyttää useamman rekisteröityneen käyttäjän,
 joilla on kaikilla omat kurssilistansa.
 
