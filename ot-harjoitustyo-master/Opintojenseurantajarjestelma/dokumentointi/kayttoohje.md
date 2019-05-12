@@ -19,7 +19,7 @@ Ohjelma luo käynnistyshakemistoon tiedostoja
 Ohjelman käynnistäminen vaatii, että koneessa on asennettuna java ohjelmisto.
 Ohjelma käynnistetään komennolla
 
-	java -jar StudyJournalUI_2.jar
+	java -jar Opintojenseurantajarjestelma-1.0-SNAPSHOT.jar
 
 ## Pääikkuna
 
