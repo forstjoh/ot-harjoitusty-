@@ -4,19 +4,23 @@
 
 Rakennekuvaus kuvaa ohjelman rakennetta
 
-(kuva tulee ensi viikolla)
+![rakenne](https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kuvat/rakenne.png)
 
 ## Käyttöliittymä
 
 Käyttöliittymässä on seuraavat toiminnot:
-login = sisäänkirjautuminen
-logout = uloskirjautuminen
-new = uusi käyttäjä
-update = päivittäminen uusilla tiedoilla näkymä
+	*Login = sisäänkirjautuminen
+	*New Course = uuden kurssin luonti tai muokkaus
+
+Käyttöliittymä on toteutettu luokassa StudyJournalUI.
 
 ## Sovelluslogiikka
 
-[Luokkakaavio](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/kuvat/luokkakaavio.png)
+Sovellusluokkia on User, Users ja Courses. Näissä luokissa on käyttäjät ja
+käyttäjien kurssit.
+
+Luokkakaavio:
+![Luokkakaavio](https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kuvat/luokkakaavio.png)
 
 
 ## Päätoiminnallisuudet
@@ -25,4 +29,4 @@ update = päivittäminen uusilla tiedoilla näkymä
 
 ## Tietojen pysyväistallennus 
 
-(tulossa viikolla 7)
+Sovellus tallentaa käyttäjien ja kurssien tiedot erilliseen tiedostoon. 
