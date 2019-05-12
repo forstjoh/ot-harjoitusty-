@@ -43,7 +43,7 @@ kirjautua sisälle tai luoda uuden käyttäjätunnuksen.
 Sisäänkirjautumisen jälkeen käyttäjän pitää painaa Update list nappia 
 nähdäkseen kurssinsa.
 
-![Sekvenssikaavio]()
+![Sekvenssikaavio](https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kuvat/sekvenssi1.png)
 
 ### kurssin luominen
 
@@ -51,7 +51,7 @@ Kirjautunut käyttäjä pystyy luomaan itselleen uusia kursseja New course
 napin painamisella tai muokkaamaan olemassa olevia kurssejaan. Toiminnosta 
 poistumisen jälkeen käyttäjän pitää painaa Update list nähdäkseen kurssinsa.
 
-![Sekvenssikaavio]()
+![Sekvenssikaavio](https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kuvat/sekvenssi2.jpg)
 
 ## Tietojen pysyväistallennus 
 
