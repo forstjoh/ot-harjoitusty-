@@ -2,9 +2,10 @@
 
 ## Sovelluksen tarkoitus
 
-Opintojen seurantajärjestelmä mahdollistaa opiskelijan kirjata kurssien
-muistiinpanot yksittäisen kurssin listalle. Samalla listalla on koottuna myös 
-kurssin tila, tenttipäivä ja arvosana.
+Opintojen seurantajärjestelmä mahdollistaa opiskelijan kirjata kaikki 
+kurssit samlle listalle. Listalle voi kirjata vapaamuotoisesti kurssin 
+tietoja, kuten kurssin nimi, kurssin tila, tenttipäivä, arvosana ja
+muistiinpanoja kurssista.
 Sovellusta on mahdollista käyttää useamman rekisteröityneen käyttäjän, 
 joilla on kaikilla omat kurssilistansa.
 
@@ -14,14 +15,14 @@ Kaikki käyttäjät ovat samalla roolilla.
 
 ## Käyttöliittymäluonnos
 
-[Luonnos](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/kuvat/kuva.png)
+![Luonnos](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/kuvat/kuva.png)
 
 ## Perusversion tarjoama toiminnallisuus
 
 ### Ennen kirjautumista
 
 * Uusi käyttäjä luo ensimmäisellä kirjautumiskerralla oman käyttäjätunnuksen 
-ja salasanan, mikä on kaksi merkkiä (aluksi, kunnes käyttäjäkanta kasvaa)
+ja salasanan.
 * Käyttäjätunnuksella ja salasanalla käyttäjä pääsee omille kurssit sivuille, 
 jollei käyttäjää löydy, järjestelmä ilmoittaa asiasta
 
@@ -32,15 +33,21 @@ jollei käyttäjää löydy, järjestelmä ilmoittaa asiasta
 * Yksittäisen luodun kurssin kohdalta pääsee uudelle listasivulle, missä on
 seuraavat kurssin tiedot:
 	* kurssin nimi
-	* muistiinpanot
-	* kurssin tila (ei alkanut, käynnissä, suoritettu, hylätty)
+	* kurssin tila
 	* tenttipäivä
 	* arvosana
-	* OK, mikä tallentaa tehdyt muutokset ja jolla pääsee takaisin
+	* muistiinpanot
+	* Create new course: tallentaa tehdyt muutokset ja jolla pääsee takaisin
 	 kurssit listaukseen
-	* Peru, mikä vie takaisin tallentamatta kurssit listaukseen 
+	* Cancel: mikä vie takaisin tallentamatta kurssit listaukseen 
 
 
 ## Jatkokehitysideoita
 
-Jatkokehitysideoita kerätään ohjelman edetessä 
+	* Käyttöliittymänäkymän parannuksia
+	* Käyttäjäkurssilistan automaattinen päivitys
+	* Käyttöliittymästä logiikan toimintoja omiin luokkiin 
+	* Salasanan suojaus tietoturvan parantamiseksi
+	* Kurssi sisällön lähettäminen sähköpostilla
+	* Sovelluksen testauskattavuus paremmaksi
+

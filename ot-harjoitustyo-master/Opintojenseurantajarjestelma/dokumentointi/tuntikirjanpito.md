@@ -20,5 +20,11 @@
 | 25.4 | 4 | ohjelman tekoa |
 | 26.4 | 3 | koodikatselmointi |
 | 26.4 | 3 | dokumentointia |
-| yht | 46 |
+| 28.4 | 2 | ohjelman tekoa |
+| 29.4 | 2 | dokumentointia |
+| 9.5 | 3 | Testejä ohjelmaan |
+| 10.5 | 2 | Ohjelman tekoa |
+| 11.5 | 4 | Ohjelman tekoa |
+| 12.5 | 7 | dokumentointia |
+| yht | 66 |
 
