@@ -52,6 +52,8 @@ kuvat
 
 kuva
 
+**Save to File** : Tallentaa tiedot tiedostoon.
+
 
 
 
