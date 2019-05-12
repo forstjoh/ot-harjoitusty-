@@ -7,7 +7,7 @@ useamman rekisteröityneen käyttäjän, joilla on kaikilla omat kurssilistansa.
 
 ## Dokumentaatio
 
-[Käyttöohje](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/kayttoohje.md)
+[Käyttöohje](https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kayttoohje.md)
 
 [Vaatimusmäärittely](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/vaatimusmaarittely.md)
 
