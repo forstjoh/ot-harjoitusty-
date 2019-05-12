@@ -25,7 +25,8 @@ Luokkakaavio:
 
 ## Päätoiminnallisuudet
 
-[Sekvenssikaavio](https://github.com/forstjoh/ot-harjoitusty-/blob/master/Opintojenseurantajarjestelma/dokumentointi/kuvat/sekvenssikaavio.png)
+Sekvenssikaavio:
+![Sekvenssikaavio](https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kuvat/sekvenssikaavio.png)
 
 ## Tietojen pysyväistallennus 
 
