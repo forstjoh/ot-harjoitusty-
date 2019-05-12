@@ -33,7 +33,7 @@ Pääikkunassa on toimet:
  
 **Login**: Olemassa olevan käyttäjän kirjautuminen tai uuden käyttäjän luominen
 
-(https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kuvat/login.png)
+![kuva](https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kuvat/login.png)
 
 **Logout**: Kirjaa käyttäjän aktiivisen käyttäjän ulos.
 
@@ -46,15 +46,15 @@ Pääikkunassa on toimet:
 - *Create new course*: Tallentaa uuden kurssin tiedot muistiin
 - *Cancel*: Sulkee New Course ikkunan tallentamatta
 
-(https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kuvat/Kurssinluominen.png)
+![kuva](https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kuvat/Kurssinluominen.png)
 
 **Update**: Päivittää käyttäjän kurssilistan.
 
-(https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kuvat/Kurssit.png)
+![kuva](https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kuvat/Kurssit.png)
 
 **Save to File** : Tallentaa tiedot tiedostoon.
 
-(https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kuvat/Save.png)
+![kuva](https://github.com/forstjoh/ot-harjoitustyo/blob/master/ot-harjoitustyo-master/Opintojenseurantajarjestelma/dokumentointi/kuvat/Save.png)
 
 
 
