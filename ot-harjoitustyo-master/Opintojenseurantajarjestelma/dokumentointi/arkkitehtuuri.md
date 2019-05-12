@@ -9,12 +9,12 @@ Rakennekuvaus kuvaa ohjelman rakennetta
 ## Käyttöliittymä
 
 Käyttöliittymässä on seuraavat toiminnot:
-	*Login = sisäänkirjautuminen
-	*Logout =
-	*New Course = uuden kurssin luonti tai muokkaus
-	*Update List =
-	* Save to File
-	* Aktiivisen käyttäjän kurssilista
+* Login = sisäänkirjautuminen
+* Logout = uloskirjautuminen
+* New Course = uuden kurssin luonti tai muokkaus
+* Update List = kurssitietojen päivittäminen
+* Save to File = Tietojen tallentaminen tiedostoon
+* Aktiivisen käyttäjän kurssilista
 
 Käyttöliittymä on toteutettu luokassa StudyJournalUI.
 
